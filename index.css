@@ -1,0 +1,132 @@
+:root {
+    /*      PRIMARY         */
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+
+    /*      NEUTRAL         */
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: var(--light-gray);
+    padding: 17% 8%
+}
+
+/*          TEXT            */
+.text__container {
+    background-color: white;
+    padding: 1.5rem;
+}
+
+.text__h2 {
+    color: var(--cyan);
+    margin-top: 1rem;
+    margin: 0;
+    margin-top: .4rem;
+}
+
+.text__p--green {
+    color: var(--bright-yellow );
+}
+
+.text__p--gray {
+    line-height: 1.9;
+    color: var(--grayish-blue);
+}
+
+
+/*      SUBSCRIPTION         */
+.subscription__container {
+    background-color: var(--cyan);
+    padding: 1.5rem;
+}
+
+.subscription__h3 {
+    margin: 0.4rem 0 0 0;
+    color: var(--light-gray);
+    font-weight: 300;
+}
+
+.cost {
+    display: flex;
+    align-items: center;
+    color: var(--light-gray);
+}
+
+.dolar {
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: 1px;
+    margin-right: .5rem;
+}
+
+.subscription__p {
+    color: var(--light-gray);
+    margin-bottom: 1.5rem;
+}
+
+.button {
+    border: none;
+    width: 100%;
+    padding: .8rem;
+    border-radius: 4px;
+    background-color: var(--bright-yellow);
+}
+
+/* -------------------- */
+
+.WhyUs__container {
+    background-color: hsl(179, 67%, 60%);
+    padding: 1.5rem;
+}
+
+.whyus__h4 {
+    color: var(--light-gray);
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.whyus__p {
+    line-height: 1.4;
+    color: var(--light-gray);
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 650px) {
+    .container{
+        padding: 17% 20%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .text__container {
+        flex-basis: 100%;
+    }
+    .subscription__container {
+        flex-basis: 50%;
+    }
+    .WhyUs__container {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        padding: 17% 25%;
+    }
+}
